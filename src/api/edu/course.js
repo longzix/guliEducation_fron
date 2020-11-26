@@ -74,4 +74,11 @@ export default {
             data: courseQuery
         })
     },
+    //删除讲师
+    deleteCourseById(courseId) {
+        return request({
+            url: `/eduservice/course/${courseId}`,
+            method: 'delete'
+        })
+    },
 }

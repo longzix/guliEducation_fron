@@ -17,5 +17,13 @@ export default {
             url: `/eduservice/video/` + id,
             method: 'delete'
         })
-    }
+    },
+
+    //删除阿里云中的视频
+    deleteAliVideo(id) {
+        return request({
+            url: `/eduvod/video/removeAliVideo/` + id,
+            method: 'delete'
+        })
+    },
 }
