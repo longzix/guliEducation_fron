@@ -10,7 +10,7 @@ export default {
             data: video
         })
     },
-    //删除小节
+    //删除小节 同时把阿里云中的视频删除
 
     deleteVideo(id) {
         return request({
